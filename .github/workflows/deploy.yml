@@ -3,29 +3,22 @@ name: DevOps Pipeline
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Setup Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-    - name: Install pnpm
-      run: npm install -g pnpm
+      - name: Install dependencies
+        run: npm install
 
-    - name: Install Dependencies
-      run: pnpm install
-
-    - name: Build Project
-      run: pnpm build
-
-    - name: Docker Build
-      run: docker build -t skillforge .
+      - name: Build app
+        run: npm run build
