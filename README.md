@@ -1,3 +1,77 @@
+# SkillForge – AI Powered Career Simulation Platform with DevOps Deployment
+
+---
+
+# Introduction
+
+SkillForge is an AI-powered career simulation and learning platform designed to help students gain practical industry experience before entering the professional world. The platform provides coding tasks, mentorship, interview preparation, and virtual company simulations.
+
+This project was deployed using DevOps technologies including GitHub, GitHub Actions, Docker, AWS EC2, and Elastic IP.
+
+---
+
+# Objectives
+
+- To provide practical industry-oriented learning.
+- To deploy a web application using DevOps tools.
+- To implement CI/CD workflow using GitHub Actions.
+- To host the project publicly using AWS EC2.
+
+---
+
+# Technologies Used
+
+## Frontend
+
+- Next.js
+- React.js
+- Tailwind CSS
+
+---
+
+## Backend Runtime
+
+- Node.js
+
+---
+
+## DevOps & Deployment
+
+- GitHub
+- GitHub Actions
+- Docker
+- AWS EC2
+- Ubuntu Linux
+- Elastic IP
+
+---
+
+# CI/CD Pipeline Using GitHub Actions
+
+GitHub Actions was used to implement the CI/CD pipeline.
+
+Whenever code is pushed to the GitHub repository, the workflow automatically triggers and executes the deployment process.
+
+---
+
+# CI/CD Workflow
+
+```text
+Developer Code
+      ↓
+GitHub Repository
+      ↓
+GitHub Actions Workflow
+      ↓
+Docker Build
+      ↓
+AWS EC2 Deployment
+      ↓
+Public Website
+```
+
+---
+
 # Project Workflow
 
 ## Step 1: Open GitHub Repository
