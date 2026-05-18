@@ -1,4 +1,8 @@
-# SkillForge – AI Powered Career Simulation Platform with DevOps Deployment
+# Process 1
+
+# Project Title
+
+## SkillForge – AI Powered Career Simulation Platform with DevOps Deployment
 
 ---
 
@@ -48,9 +52,9 @@ This project was deployed using DevOps technologies including GitHub, GitHub Act
 
 # CI/CD Pipeline Using GitHub Actions
 
-GitHub Actions was used to implement the CI/CD pipeline.
+GitHub Actions was used to implement CI/CD pipeline.
 
-Whenever code is pushed to the GitHub repository, the workflow automatically triggers and executes the deployment process.
+Whenever code is pushed to GitHub repository, the workflow automatically triggers.
 
 ---
 
@@ -71,6 +75,7 @@ Public Website
 ```
 
 ---
+
 
 # Project Workflow
 
@@ -203,3 +208,55 @@ Open the following link in browser:
 ```bash
 http://13.206.219.166
 ```
+
+# Process 2
+
+## Step 1: Open AWS Console
+
+Login to AWS Management Console.
+
+AWS EC2 service was used to host and deploy the SkillForge application.
+
+Go to:
+
+```bash
+AWS Console → EC2 → Instances
+```
+
+Select the SkillForge EC2 instance and click:
+
+```bash
+Instance State → Start Instance
+```
+
+Wait until the instance state becomes:
+
+```bash
+Running
+```
+
+---
+
+# Elastic IP Configuration
+
+Elastic IP was configured for the EC2 instance to maintain a fixed public IP address even after restarting the instance.
+
+This helped the SkillForge website remain accessible using the same public IP without changing the deployment URL.
+
+Elastic IP Used:
+
+```bash
+13.206.219.166
+```
+
+---
+
+## Step 2: Open Website in Browser
+
+Open the following link in browser:
+
+```bash
+http://13.206.219.166
+```
+
+The SkillForge application will open successfully.
